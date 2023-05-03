@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bkes"/>
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bikesh Regmi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/headline_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incoming SWE Intern at Lincoln Financial Group, Computer Science Student at Morgan State University"
+            android:textSize="16sp"
+            android:layout_below="@+id/name_textview"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/profile_image"/>
+
+
+    </RelativeLayout>
+
+    <!-- About section -->
+    <TextView
+        android:id="@+id/about_heading_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/about_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" As a Computer Science student at Morgan State University, my primary area of interest is computer engineering. In addition to my academic pursuits, I engage in various projects focused on Kotlin, Python, Java, C++, and AI/ML.
+."/>
+
+    <!-- Experience section -->
+    <TextView
+        android:id="@+id/experience_heading_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Experience"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Experience item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/experience_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Development Engineer Intern"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/experience_company_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lincoln Financial Group · Internship"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/experience_duration_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan 2023 - Present"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/experience_description_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lorem ipsum. Sed auctor justo non dolor mollis iaculis. Nullam quis dui ut enim bibendum laoreet nec vel odio. Integer imperdiet lacus sit amet velit vehicula, non cursus metus lacinia. Etiam nec euismod justo."/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
